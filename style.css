@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* Container utama */
+.container {
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Ikon wisuda */
+.graduation-icon {
+    font-size: 80px;
+    animation: melayang 2s infinite ease-in-out;
+}
+
+@keyframes melayang {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Judul */
+h1 {
+    font-size: 45px;
+    margin-top: 15px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.nama {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    margin-top: 25px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    line-height: 1.7;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-style: italic;
+    color: #764ba2;
+    font-weight: bold;
+}
+
+/* Tombol */
+button {
+    margin-top: 25px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #ffcc70;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #fff;
+}
+
+/* Pesan */
+#pesan {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Balon */
+.balloon {
+    position: fixed;
+    font-size: 50px;
+    animation: naik 6s infinite ease-in-out;
+    opacity: 0.8;
+}
+
+.balloon1 {
+    left: 5%;
+    bottom: -50px;
+    animation-delay: 0s;
+}
+
+.balloon2 {
+    left: 25%;
+    bottom: -100px;
+    animation-delay: 2s;
+}
+
+.balloon3 {
+    right: 20%;
+    bottom: -80px;
+    animation-delay: 1s;
+}
+
+.balloon4 {
+    right: 5%;
+    bottom: -120px;
+    animation-delay: 3s;
+}
+
+@keyframes naik {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-110vh);
+    }
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .graduation-icon {
+        font-size: 65px;
+    }
+
+    .card {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
